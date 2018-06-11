@@ -1,7 +1,8 @@
 import * as firebase from 'firebase';
+import { API_KEY_FIREBASE } from './config';
 
 const config = {
-  apiKey: "AIzaSyB4XooqZJ-b8W2U9xWy6USNckF6H-kzqTs",
+  apiKey: API_KEY_FIREBASE,
   authDomain: "nba-app-alexbhdez.firebaseapp.com",
   databaseURL: "https://nba-app-alexbhdez.firebaseio.com",
   projectId: "nba-app-alexbhdez",
