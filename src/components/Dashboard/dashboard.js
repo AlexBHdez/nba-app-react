@@ -4,6 +4,7 @@ import FormField from '../widgets/FormFields/formFields';
 import { firebaseTeams, firebaseArticles, firebase } from '../../firebase';
 
 import { Editor } from 'react-draft-wysiwyg';
+// eslint-disable-next-line
 import { EditorState, convertFromRaw, convertToRaw } from 'draft-js';
 import { stateToHTML } from 'draft-js-export-html';
 
@@ -209,6 +210,7 @@ class Dashboard extends Component {
   onEditorStateChange = (editorState) => {
 
     let contentState = editorState.getCurrentContent();
+    // eslint-disable-next-line
     let rawState = convertToRaw(contentState);
     let html = stateToHTML(contentState);
 
